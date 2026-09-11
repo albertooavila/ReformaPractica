@@ -1,15 +1,23 @@
-# ReformaPráctica
+# ReformaPractica v2
 
-Web estática preparada para publicar gratis en GitHub Pages o Cloudflare Pages.
+Web estática preparada para Cloudflare Pages.
 
-## Archivos principales
-- index.html
-- style.css
-- script.js
-- páginas de categorías
-- calculadoras.html
-- artículo de ejemplo
-- páginas legales provisionales
+## URL actual
+https://reformapractica.pages.dev
 
-## Publicación
-Puedes subir todo el contenido de esta carpeta a un repositorio de GitHub o arrastrarlo a un servicio de hosting estático compatible.
+## Novedades SEO v2
+- robots.txt
+- sitemap.xml
+- etiquetas canonical
+- meta robots
+- Open Graph básico
+- datos estructurados WebSite en la portada
+
+## Después de subir a GitHub
+1. Espera a que Cloudflare despliegue automáticamente.
+2. Comprueba:
+   - https://reformapractica.pages.dev/robots.txt
+   - https://reformapractica.pages.dev/sitemap.xml
+3. Da de alta la web en Google Search Console.
+4. Envía el sitemap: sitemap.xml
+5. Solicita indexación de la portada.
