@@ -22,3 +22,11 @@ Primera jornada de contenido completada: 4 artículos SEO del clúster de humeda
 - Solicitar indexación de `80-humedad-en-casa.html` si hay cuota.
 - Después inspeccionar los dos artículos nuevos.
 - Revisar si el sitemap pasa de “No se ha podido obtener” a “Correcto”.
+
+
+## v5.2
+La página `calculadoras.html` muestra ahora las 4 herramientas interactivas:
+- Superficie de aislamiento
+- Punto de rocío
+- Consumo de deshumidificador
+- Orientador de tipo de humedad

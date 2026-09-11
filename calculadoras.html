@@ -1,47 +1,200 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Calculadoras para reformas y vivienda | ReformaPractica</title><meta name="description" content="Calculadoras gratuitas para aislamiento, reformas, calefacción y mejora de viviendas.">
-<link rel="stylesheet" href="style.css">
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadoras para reformas y vivienda | ReformaPractica</title>
+<meta name="description" content="Calculadoras gratuitas para aislamiento, humedad, deshumidificación y consumo eléctrico en vivienda.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://reformapractica.pages.dev/calculadoras.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ReformaPractica">
 <meta property="og:title" content="Calculadoras para reformas y vivienda | ReformaPractica">
-<meta property="og:description" content="Calculadoras gratuitas para aislamiento, reformas, calefacción y mejora de viviendas.">
+<meta property="og:description" content="Herramientas gratuitas para calcular aislamiento, punto de rocío, consumo de deshumidificadores y orientar tipos de humedad.">
 <meta property="og:url" content="https://reformapractica.pages.dev/calculadoras.html">
 <meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-</head><body>
 <div class="topbar">Guías claras para reformar mejor y gastar con criterio</div>
+
 <header>
   <div class="container nav">
     <a class="brand" href="index.html"><span class="logo">RP</span> ReformaPráctica</a>
     <button class="menu-btn" aria-label="Abrir menú">☰</button>
-    <nav class="navlinks"><a href="index.html">Inicio</a><a href="reformas.html">Reformas</a><a href="aislamiento.html">Aislamiento</a><a href="humedad.html">Humedad</a><a href="calefaccion.html">Calefacción</a><a href="electricidad.html">Electricidad</a><a href="calculadoras.html">Calculadoras</a></nav>
+    <nav class="navlinks">
+      <a href="index.html">Inicio</a>
+      <a href="reformas.html">Reformas</a>
+      <a href="aislamiento.html">Aislamiento</a>
+      <a href="humedad.html">Humedad</a>
+      <a href="calefaccion.html">Calefacción</a>
+      <a href="electricidad.html">Electricidad</a>
+      <a href="calculadoras.html">Calculadoras</a>
+    </nav>
   </div>
 </header>
 
-<main><div class="container"><div class="breadcrumbs"><a href="index.html">Inicio</a> › Calculadoras</div></div>
-<section class="section" style="padding-top:1rem"><div class="container">
-<div class="eyebrow">Herramientas</div><h1 style="font-size:clamp(2.6rem,5vw,4.5rem)">Calculadoras</h1>
-<p class="lead">Herramientas sencillas para convertir dudas comunes en números útiles.</p>
-<div class="tool" style="margin-top:2rem"><div class="tool-grid">
-<div><h2>Superficie de aislamiento</h2><p>Calcula metros cuadrados y margen de desperdicio.</p></div>
-<div class="calc"><label>Largo (m)<input id="largo" type="number" step="0.1"></label><label>Ancho (m)<input id="ancho" type="number" step="0.1"></label><label>Margen extra (%)<input id="extra" type="number" value="10"></label><button class="btn primary" id="calcAislamiento" style="margin-top:1rem;width:100%">Calcular</button><div id="resultado" class="result">Introduce largo y ancho para calcular.</div></div>
-</div></div></div></section>
-<section class="section"><div class="container">
-<div class="section-head"><div><div class="eyebrow">Humedad</div><h2>Calculadora de consumo de deshumidificador</h2></div></div>
-<div class="mini-calc">
-<div class="calc-grid">
-<label>Potencia (W)<input id="potenciaDesh" type="number" value="320"></label>
-<label>Horas al día<input id="horasDesh" type="number" step="0.5" value="8"></label>
-<label>Precio electricidad (€/kWh)<input id="precioKwh" type="number" step="0.01" value="0.20"></label>
-<label>Días<input id="diasDesh" type="number" value="30"></label>
+<main>
+<div class="container">
+  <div class="breadcrumbs"><a href="index.html">Inicio</a> › Calculadoras</div>
 </div>
-<button class="btn primary" id="calcConsumoDeshumidificador" style="margin-top:1rem">Calcular consumo</button>
-<div id="resultadoConsumoDesh" class="calc-output">Introduce tus datos y pulsa calcular.</div>
+
+<section class="section" style="padding-top:1rem">
+<div class="container">
+  <div class="eyebrow">Herramientas gratuitas</div>
+  <h1 style="font-size:clamp(2.6rem,5vw,4.5rem)">Calculadoras</h1>
+  <p class="lead">Cuatro herramientas sencillas para convertir dudas habituales sobre aislamiento y humedad en datos útiles.</p>
+
+  <div class="grid" style="margin-top:2rem">
+    <a class="card" href="#aislamiento">
+      <div class="icon">🧱</div>
+      <h3>Superficie de aislamiento</h3>
+      <p>Calcula los m² de material y añade un margen para recortes.</p>
+    </a>
+    <a class="card" href="#punto-rocio">
+      <div class="icon">💧</div>
+      <h3>Punto de rocío</h3>
+      <p>Estima a qué temperatura puede empezar a condensar la humedad.</p>
+    </a>
+    <a class="card" href="#consumo-deshumidificador">
+      <div class="icon">⚡</div>
+      <h3>Consumo de deshumidificador</h3>
+      <p>Calcula kWh y coste diario o mensual según potencia y tarifa.</p>
+    </a>
+    <a class="card" href="#tipo-humedad">
+      <div class="icon">🔎</div>
+      <h3>Orientador de tipo de humedad</h3>
+      <p>Compara señales de condensación, capilaridad y filtración.</p>
+    </a>
+  </div>
 </div>
-</div></section>
+</section>
+
+<section class="section alt" id="aislamiento">
+<div class="container">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Aislamiento</div>
+      <h2>Calculadora de superficie de aislamiento</h2>
+    </div>
+  </div>
+
+  <div class="tool">
+    <div class="tool-grid">
+      <div>
+        <h2>¿Cuánto material necesitas?</h2>
+        <p>Introduce las medidas y añade un margen para recortes, encuentros y desperdicio.</p>
+      </div>
+      <div class="calc">
+        <label>Largo (m)
+          <input id="largo" type="number" step="0.1" placeholder="8">
+        </label>
+        <label>Ancho (m)
+          <input id="ancho" type="number" step="0.1" placeholder="6">
+        </label>
+        <label>Margen extra (%)
+          <input id="extra" type="number" value="10">
+        </label>
+        <button class="btn primary" id="calcAislamiento" style="margin-top:1rem;width:100%">Calcular</button>
+        <div id="resultado" class="result">Introduce largo y ancho para calcular.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="punto-rocio">
+<div class="container">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Humedad y condensación</div>
+      <h2>Calculadora de punto de rocío</h2>
+    </div>
+  </div>
+
+  <div class="mini-calc">
+    <p>Estima a qué temperatura aproximada una superficie puede empezar a condensar agua con las condiciones interiores indicadas.</p>
+    <div class="calc-grid">
+      <label>Temperatura interior (°C)
+        <input id="tempRocio" type="number" step="0.1" value="18">
+      </label>
+      <label>Humedad relativa (%)
+        <input id="hrRocio" type="number" min="1" max="100" step="1" value="80">
+      </label>
+    </div>
+    <button class="btn primary" id="calcRocio" style="margin-top:1rem">Calcular punto de rocío</button>
+    <div id="resultadoRocio" class="calc-output">
+      <strong>Ejemplo:</strong> prueba con 18 °C y 80 % HR.
+    </div>
+    <p class="disclaimer" style="margin-top:1rem">Cálculo orientativo mediante la fórmula de Magnus. Para entender mejor el resultado, consulta <a class="inline-link" href="80-humedad-en-casa.html">80 % de humedad en casa</a>.</p>
+  </div>
+</div>
+</section>
+
+<section class="section alt" id="consumo-deshumidificador">
+<div class="container">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Consumo eléctrico</div>
+      <h2>Calculadora de consumo de deshumidificador</h2>
+    </div>
+  </div>
+
+  <div class="mini-calc">
+    <p>Calcula el consumo teórico y el coste según la potencia del aparato, las horas de uso y tu precio de electricidad.</p>
+    <div class="calc-grid">
+      <label>Potencia del aparato (W)
+        <input id="potenciaDesh" type="number" min="1" step="1" value="320">
+      </label>
+      <label>Horas de uso al día
+        <input id="horasDesh" type="number" min="0.1" max="24" step="0.5" value="8">
+      </label>
+      <label>Precio electricidad (€/kWh)
+        <input id="precioKwh" type="number" min="0" step="0.01" value="0.20">
+      </label>
+      <label>Días de uso
+        <input id="diasDesh" type="number" min="1" step="1" value="30">
+      </label>
+    </div>
+    <button class="btn primary" id="calcConsumoDeshumidificador" style="margin-top:1rem">Calcular consumo</button>
+    <div id="resultadoConsumoDesh" class="calc-output">Introduce tus datos y pulsa calcular.</div>
+    <p class="disclaimer" style="margin-top:1rem">Para más contexto, consulta <a class="inline-link" href="cuanto-consume-deshumidificador.html">cuánto consume un deshumidificador</a>.</p>
+  </div>
+</div>
+</section>
+
+<section class="section" id="tipo-humedad">
+<div class="container">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Diagnóstico orientativo</div>
+      <h2>Condensación, capilaridad o filtración</h2>
+    </div>
+  </div>
+
+  <div class="mini-calc">
+    <p>Marca las señales que observas. La herramienta solo orienta sobre qué causa conviene investigar primero.</p>
+
+    <label><input id="qVentanas" type="checkbox" style="width:auto"> Tengo condensación o agua en ventanas.</label>
+    <label><input id="qEsquinas" type="checkbox" style="width:auto"> Hay moho en esquinas, techo exterior o detrás de muebles.</label>
+    <label><input id="qInvierno" type="checkbox" style="width:auto"> Empeora claramente con frío o en invierno.</label>
+    <label><input id="qBase" type="checkbox" style="width:auto"> Los daños arrancan desde la base del muro.</label>
+    <label><input id="qSales" type="checkbox" style="width:auto"> Veo sales, polvo cristalino o eflorescencias.</label>
+    <label><input id="qSube" type="checkbox" style="width:auto"> La degradación parece ascender desde el suelo.</label>
+    <label><input id="qLluvia" type="checkbox" style="width:auto"> La mancha empeora después de lluvia.</label>
+    <label><input id="qLocalizada" type="checkbox" style="width:auto"> La humedad está muy localizada alrededor de un punto.</label>
+
+    <button class="btn primary" id="calcTipoHumedad" style="margin-top:1rem">Ver orientación</button>
+    <div id="resultadoTipoHumedad" class="quiz-result"><strong>Marca alguna señal</strong> para obtener una orientación.</div>
+
+    <p class="disclaimer" style="margin-top:1rem">No sustituye un diagnóstico técnico. Consulta también <a class="inline-link" href="condensacion-o-capilaridad.html">cómo diferenciar condensación y capilaridad</a>.</p>
+  </div>
+</div>
+</section>
+
 </main>
+
 <footer class="footer">
   <div class="container footer-grid">
     <div>
@@ -49,9 +202,21 @@
       <p>Información práctica sobre reformas, eficiencia energética, bricolaje y mantenimiento de vivienda.</p>
       <p class="disclaimer">Contenido informativo. Para trabajos eléctricos, estructurales, gas y otras actuaciones reguladas, consulta siempre a un profesional habilitado.</p>
     </div>
-    <div><strong>Secciones</strong><br><a href="reformas.html">Reformas</a><br><a href="aislamiento.html">Aislamiento</a><br><a href="humedad.html">Humedad</a></div>
-    <div><strong>Legal</strong><br><a href="aviso-legal.html">Aviso legal</a><br><a href="privacidad.html">Privacidad</a><br><a href="cookies.html">Cookies</a></div>
+    <div>
+      <strong>Secciones</strong><br>
+      <a href="reformas.html">Reformas</a><br>
+      <a href="aislamiento.html">Aislamiento</a><br>
+      <a href="humedad.html">Humedad</a>
+    </div>
+    <div>
+      <strong>Legal</strong><br>
+      <a href="aviso-legal.html">Aviso legal</a><br>
+      <a href="privacidad.html">Privacidad</a><br>
+      <a href="cookies.html">Cookies</a>
+    </div>
   </div>
 </footer>
+
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
