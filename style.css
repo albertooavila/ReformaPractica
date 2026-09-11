@@ -170,3 +170,19 @@ input,select{
 .cost-card b{display:block;color:var(--brand-dark);font-size:1.25rem}
 .quiz-result{margin-top:1rem;background:#eef6ef;border:1px solid #d5e5d8;border-radius:12px;padding:1rem}
 @media(max-width:720px){.compare-grid,.cost-cards{grid-template-columns:1fr}}
+
+
+/* v5.4 legal pages */
+.legal-meta{
+  background:#eef6ef;border:1px solid #d5e5d8;border-radius:14px;
+  padding:1rem 1.1rem;margin:1.2rem 0 1.6rem;
+}
+.legal-placeholder{
+  display:inline-block;background:#fff4cc;border:1px solid #e7cf72;
+  color:#554600;padding:.12rem .4rem;border-radius:6px;font-weight:800;
+}
+.legal-table{width:100%;border-collapse:collapse;margin:1.2rem 0}
+.legal-table th,.legal-table td{border:1px solid var(--line);padding:.8rem;vertical-align:top;text-align:left}
+.legal-table th{background:#eef2ec}
+.legal-nav{display:flex;gap:.7rem;flex-wrap:wrap;margin:1rem 0 1.5rem}
+.legal-nav a{border:1px solid var(--line);background:#fff;padding:.55rem .75rem;border-radius:10px;font-weight:700;color:var(--brand-dark)}
