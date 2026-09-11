@@ -30,3 +30,19 @@ La página `calculadoras.html` muestra ahora las 4 herramientas interactivas:
 - Punto de rocío
 - Consumo de deshumidificador
 - Orientador de tipo de humedad
+
+
+## v5.3
+La guía `articulo-aislar-desvan.html` deja de ser un borrador y pasa a ser una guía completa:
+- elección de envolvente térmica
+- materiales
+- resistencia térmica y espesores
+- continuidad
+- barrera/freno de vapor
+- paso a paso
+- transitabilidad
+- seguridad
+- errores frecuentes
+- fuentes IDAE y CTE
+
+También se ha actualizado `aislamiento.html`, la portada y `sitemap.xml`.
