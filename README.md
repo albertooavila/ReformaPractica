@@ -61,3 +61,7 @@ Antes de monetizar hay que sustituir los campos amarillos:
 - [EMAIL DE CONTACTO]
 
 La política refleja el estado actual: Cloudflare activo; AdSense y Analytics todavía no activos.
+
+
+## v5.5 - Favicon
+Se han añadido favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png y site.webmanifest, y se ha enlazado el favicon en todas las páginas HTML.
