@@ -1,19 +1,24 @@
-# ReformaPractica v3
-
-Actualización preparada para Cloudflare Pages.
+# ReformaPractica v4
 
 ## Novedades
-- Nuevo artículo SEO: deshumidificador-20l-metros-cuadrados.html
+- Nuevo artículo SEO: `80-humedad-en-casa.html`
+- Calculadora de punto de rocío
+- Enlaces cruzados entre los dos artículos de humedad
 - Categoría Humedad actualizada
-- Portada enlaza el nuevo artículo
-- Calculadora orientativa dentro del artículo
-- sitemap.xml simplificado y ampliado a 9 URLs
-- Metadatos Article + FAQ estructurados
+- Portada actualizada
+- sitemap.xml actualizado a 10 URLs
 
-## Después de subir a GitHub
-1. Sube todos los archivos de este ZIP a la raíz del repositorio.
-2. Commit sugerido: `Primer artículo SEO sobre deshumidificadores`.
-3. Espera al despliegue automático de Cloudflare.
-4. Abre:
-   https://reformapractica.pages.dev/deshumidificador-20l-metros-cuadrados.html
-5. En Search Console, inspecciona esa URL y solicita indexación.
+## Subida
+Sube los archivos del ZIP de actualización a la raíz del repositorio GitHub.
+
+Commit sugerido:
+`Segundo artículo SEO sobre humedad alta`
+
+## Después
+Comprueba:
+https://reformapractica.pages.dev/80-humedad-en-casa.html
+
+Mañana, cuando se renueve la cuota de Search Console:
+1. Solicita indexación de `deshumidificador-20l-metros-cuadrados.html`.
+2. Solicita indexación de `80-humedad-en-casa.html` si queda cuota.
+3. Revisa si el sitemap ya figura como correcto.

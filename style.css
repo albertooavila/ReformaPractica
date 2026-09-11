@@ -141,3 +141,17 @@ input,select{
 .article-meta{display:flex;gap:.7rem;flex-wrap:wrap;color:var(--muted);font-size:.9rem;margin:.7rem 0 1.2rem}
 .article a.inline-link{color:var(--brand);font-weight:750;text-decoration:underline;text-underline-offset:2px}
 @media(max-width:650px){.calc-grid{grid-template-columns:1fr}}
+
+
+/* v4: artículo humedad 80% */
+.level-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin:1.2rem 0}
+.level-box{border:1px solid var(--line);background:#fff;border-radius:14px;padding:1rem}
+.level-box strong{display:block;font-size:1.15rem;margin-bottom:.25rem}
+.action-steps{counter-reset:steps;list-style:none;padding:0}
+.action-steps li{counter-increment:steps;position:relative;padding:0 0 1rem 3rem;margin:0 0 .8rem;border-bottom:1px solid var(--line)}
+.action-steps li::before{content:counter(steps);position:absolute;left:0;top:0;width:2rem;height:2rem;border-radius:999px;background:var(--brand);color:white;display:grid;place-items:center;font-weight:800}
+.kpi-row{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin:1.2rem 0}
+.kpi{background:#f7faf7;border:1px solid var(--line);border-radius:14px;padding:1rem}
+.kpi b{display:block;font-size:1.3rem;color:var(--brand-dark)}
+@media(max-width:760px){.level-grid,.kpi-row{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.level-grid,.kpi-row{grid-template-columns:1fr}}

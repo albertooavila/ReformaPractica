@@ -50,3 +50,27 @@ if(humCalcBtn){
     out.innerHTML = '<strong>Orientación:</strong> ' + msg + '<br><small>Estimación práctica, no sustituye la ficha técnica del fabricante ni un cálculo higrotérmico.</small>';
   });
 }
+
+
+const dewBtn = document.querySelector('#calcRocio');
+if(dewBtn){
+  dewBtn.addEventListener('click',()=>{
+    const t = parseFloat(document.querySelector('#tempRocio').value);
+    const rh = parseFloat(document.querySelector('#hrRocio').value);
+    const out = document.querySelector('#resultadoRocio');
+    if(!Number.isFinite(t) || !Number.isFinite(rh) || rh <= 0 || rh > 100){
+      out.innerHTML = '<strong>Introduce una temperatura y una humedad válidas.</strong>';
+      return;
+    }
+    const a = 17.62, b = 243.12;
+    const gamma = Math.log(rh/100) + (a*t)/(b+t);
+    const dp = (b*gamma)/(a-gamma);
+    let advice = '';
+    if(rh >= 80) advice = 'La humedad es muy alta: busca el origen y actúa para reducirla.';
+    else if(rh >= 60) advice = 'La humedad está por encima del objetivo habitual para controlar condensación y moho.';
+    else advice = 'La humedad está en una zona más favorable para el control de condensación.';
+    out.innerHTML = '<strong>Punto de rocío aproximado: ' + dp.toFixed(1) + ' °C.</strong><br>' +
+      'Una superficie que baje aproximadamente a esa temperatura puede empezar a condensar humedad. ' + advice +
+      '<br><small>Cálculo orientativo mediante la fórmula de Magnus.</small>';
+  });
+}
