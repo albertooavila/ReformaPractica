@@ -155,3 +155,18 @@ input,select{
 .kpi b{display:block;font-size:1.3rem;color:var(--brand-dark)}
 @media(max-width:760px){.level-grid,.kpi-row{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.level-grid,.kpi-row{grid-template-columns:1fr}}
+
+
+/* v5: artículos condensación/capilaridad + consumo deshumidificador */
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0}
+.compare-box{border:1px solid var(--line);border-radius:16px;padding:1.2rem;background:#fff}
+.compare-box h3{margin-top:.15rem}
+.signal{display:flex;gap:.7rem;align-items:flex-start;margin:.65rem 0}
+.signal-mark{width:1.65rem;height:1.65rem;flex:0 0 1.65rem;border-radius:999px;background:var(--accent);display:grid;place-items:center;font-size:.82rem;font-weight:900;color:var(--brand-dark)}
+.warning-box{background:#fff8e8;border:1px solid #ead9a7;border-radius:14px;padding:1rem 1.1rem;margin:1.2rem 0}
+.formula{font-size:1.08rem;font-weight:800;background:#eef6ef;border-radius:12px;padding:1rem;margin:1rem 0;text-align:center}
+.cost-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin:1rem 0}
+.cost-card{background:#f7faf7;border:1px solid var(--line);border-radius:14px;padding:1rem}
+.cost-card b{display:block;color:var(--brand-dark);font-size:1.25rem}
+.quiz-result{margin-top:1rem;background:#eef6ef;border:1px solid #d5e5d8;border-radius:12px;padding:1rem}
+@media(max-width:720px){.compare-grid,.cost-cards{grid-template-columns:1fr}}

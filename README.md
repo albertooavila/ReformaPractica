@@ -1,24 +1,24 @@
-# ReformaPractica v4
+# ReformaPractica v5
 
-## Novedades
-- Nuevo artículo SEO: `80-humedad-en-casa.html`
-- Calculadora de punto de rocío
-- Enlaces cruzados entre los dos artículos de humedad
-- Categoría Humedad actualizada
-- Portada actualizada
-- sitemap.xml actualizado a 10 URLs
+Primera jornada de contenido completada: 4 artículos SEO del clúster de humedad/deshumidificación.
 
-## Subida
-Sube los archivos del ZIP de actualización a la raíz del repositorio GitHub.
+## Nuevos artículos
+- `condensacion-o-capilaridad.html`
+- `cuanto-consume-deshumidificador.html`
 
-Commit sugerido:
-`Segundo artículo SEO sobre humedad alta`
+## Actualizaciones
+- `humedad.html` actualizado con los 4 artículos.
+- Portada actualizada.
+- Enlaces internos añadidos entre los 4 artículos.
+- `calculadoras.html` incorpora calculadora de coste del deshumidificador.
+- `sitemap.xml` actualizado a 12 URLs.
+- `style.css` y `script.js` ampliados.
 
-## Después
-Comprueba:
-https://reformapractica.pages.dev/80-humedad-en-casa.html
+## Commit sugerido
+`Completar primer cluster SEO de humedad`
 
-Mañana, cuando se renueve la cuota de Search Console:
-1. Solicita indexación de `deshumidificador-20l-metros-cuadrados.html`.
-2. Solicita indexación de `80-humedad-en-casa.html` si queda cuota.
-3. Revisa si el sitemap ya figura como correcto.
+## Pendiente para mañana en Search Console
+- Solicitar indexación de `deshumidificador-20l-metros-cuadrados.html` (hoy dio cuota superada).
+- Solicitar indexación de `80-humedad-en-casa.html` si hay cuota.
+- Después inspeccionar los dos artículos nuevos.
+- Revisar si el sitemap pasa de “No se ha podido obtener” a “Correcto”.

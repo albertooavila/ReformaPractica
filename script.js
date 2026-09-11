@@ -74,3 +74,59 @@ if(dewBtn){
       '<br><small>Cálculo orientativo mediante la fórmula de Magnus.</small>';
   });
 }
+
+
+const costBtn = document.querySelector('#calcConsumoDeshumidificador');
+if(costBtn){
+  costBtn.addEventListener('click',()=>{
+    const watts=parseFloat(document.querySelector('#potenciaDesh').value)||0;
+    const hours=parseFloat(document.querySelector('#horasDesh').value)||0;
+    const price=parseFloat(document.querySelector('#precioKwh').value)||0;
+    const days=parseFloat(document.querySelector('#diasDesh').value)||30;
+    const out=document.querySelector('#resultadoConsumoDesh');
+    if(watts<=0 || hours<=0 || price<0){
+      out.innerHTML='<strong>Introduce potencia, horas de uso y precio del kWh.</strong>';
+      return;
+    }
+    const dailyKwh=(watts/1000)*hours;
+    const dailyCost=dailyKwh*price;
+    const monthlyKwh=dailyKwh*days;
+    const monthlyCost=monthlyKwh*price;
+    out.innerHTML=
+      '<strong>Consumo diario teórico: '+dailyKwh.toFixed(2)+' kWh</strong><br>'+
+      'Coste diario: '+dailyCost.toFixed(2)+' €<br>'+
+      'Consumo en '+days.toFixed(0)+' días: '+monthlyKwh.toFixed(1)+' kWh<br>'+
+      '<strong>Coste en '+days.toFixed(0)+' días: '+monthlyCost.toFixed(2)+' €</strong><br>'+
+      '<small>Es un máximo simple suponiendo que el equipo consume esa potencia durante todas las horas indicadas. Con humidistato, el compresor puede ciclar y el consumo real ser menor.</small>';
+  });
+}
+
+const diagBtn = document.querySelector('#calcTipoHumedad');
+if(diagBtn){
+  diagBtn.addEventListener('click',()=>{
+    let c=0, cap=0, filt=0;
+    const val = id => document.querySelector(id)?.checked;
+    if(val('#qVentanas')) c+=2;
+    if(val('#qEsquinas')) c+=2;
+    if(val('#qInvierno')) c+=1;
+    if(val('#qBase')) cap+=2;
+    if(val('#qSales')) cap+=2;
+    if(val('#qSube')) cap+=1;
+    if(val('#qLluvia')) filt+=3;
+    if(val('#qLocalizada')) filt+=2;
+    const out=document.querySelector('#resultadoTipoHumedad');
+    if(c===0 && cap===0 && filt===0){
+      out.innerHTML='<strong>Marca alguna señal para obtener una orientación.</strong>';
+      return;
+    }
+    let result='';
+    if(filt>c && filt>cap){
+      result='<strong>Patrón más compatible con filtración o entrada localizada de agua.</strong> Revisa cubierta, fachada, juntas, tuberías o puntos de entrada antes de tratar el acabado.';
+    }else if(cap>c){
+      result='<strong>Patrón compatible con humedad ascendente/capilar, pero no concluyente.</strong> Las sales y los daños desde la base orientan, aunque filtraciones bajas y otras patologías pueden parecerse. Conviene diagnóstico constructivo.';
+    }else{
+      result='<strong>Patrón más compatible con condensación superficial.</strong> Comprueba humedad relativa, temperatura de las superficies, ventilación y puentes térmicos.';
+    }
+    out.innerHTML=result+'<br><small>Esta herramienta no diagnostica por sí sola una patología de humedad.</small>';
+  });
+}
