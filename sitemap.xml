@@ -2,42 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://reformapractica.pages.dev/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://reformapractica.pages.dev/reformas.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://reformapractica.pages.dev/aislamiento.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://reformapractica.pages.dev/humedad.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://reformapractica.pages.dev/calefaccion.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://reformapractica.pages.dev/electricidad.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://reformapractica.pages.dev/calculadoras.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://reformapractica.pages.dev/articulo-aislar-desvan.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-11</lastmod>
+  </url>
+  <url>
+    <loc>https://reformapractica.pages.dev/deshumidificador-20l-metros-cuadrados.html</loc>
+    <lastmod>2026-09-11</lastmod>
   </url>
 </urlset>

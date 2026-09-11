@@ -1,23 +1,19 @@
-# ReformaPractica v2
+# ReformaPractica v3
 
-Web estática preparada para Cloudflare Pages.
+Actualización preparada para Cloudflare Pages.
 
-## URL actual
-https://reformapractica.pages.dev
-
-## Novedades SEO v2
-- robots.txt
-- sitemap.xml
-- etiquetas canonical
-- meta robots
-- Open Graph básico
-- datos estructurados WebSite en la portada
+## Novedades
+- Nuevo artículo SEO: deshumidificador-20l-metros-cuadrados.html
+- Categoría Humedad actualizada
+- Portada enlaza el nuevo artículo
+- Calculadora orientativa dentro del artículo
+- sitemap.xml simplificado y ampliado a 9 URLs
+- Metadatos Article + FAQ estructurados
 
 ## Después de subir a GitHub
-1. Espera a que Cloudflare despliegue automáticamente.
-2. Comprueba:
-   - https://reformapractica.pages.dev/robots.txt
-   - https://reformapractica.pages.dev/sitemap.xml
-3. Da de alta la web en Google Search Console.
-4. Envía el sitemap: sitemap.xml
-5. Solicita indexación de la portada.
+1. Sube todos los archivos de este ZIP a la raíz del repositorio.
+2. Commit sugerido: `Primer artículo SEO sobre deshumidificadores`.
+3. Espera al despliegue automático de Cloudflare.
+4. Abre:
+   https://reformapractica.pages.dev/deshumidificador-20l-metros-cuadrados.html
+5. En Search Console, inspecciona esa URL y solicita indexación.
